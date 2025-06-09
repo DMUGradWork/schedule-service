@@ -47,7 +47,7 @@ public class AlarmService {
         alarm.setEnabled(enabled);
         return alarmRepository.save(alarm);
     }
-
+    //알람 서비스 코드 추가
     public void delete(Long id) {
         if (!alarmRepository.existsById(id)) {
             throw new EntityNotFoundException("Alarm not found with id: " + id);
